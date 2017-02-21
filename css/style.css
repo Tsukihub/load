@@ -1,0 +1,427 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------Importation des poilces---------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family:'geo';
+	src:url('../fonts/geo.ttf');
+}
+
+@font-face {
+	font-family:'captain';
+	src:url('../fonts/captain.ttf');
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------GLOBAL--------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body{
+	background-color: #E9E9E9 ;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+span{
+	color: orange;
+}
+
+.row{			/* Putain de margin de Bootstrap à enlever */
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.col-xs-8{		/* Putain de bootstrap */
+	padding: 0;
+}
+
+.col-xs-12{
+	padding: 0;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------HEADER--------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.hidden2{		/*Logo PC qui n'apparaît pas */
+	display: none;
+}
+
+.clear2{		/*Logo mobile qui apparaît (mobile first) */
+	display: block;
+}
+
+#logo{			/*Logo mobile */
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 2px 2px 5px 0px #656565;
+}
+
+#logo2{
+	width: 20%;
+	box-shadow: 2px 2px 5px 0px #656565;	/*PLEEEEEIN DE BOX SHADOW MOUHAHAHA*/
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------BARRE DE NAV MoBILE---------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#nav{							/*Le nav global */
+	box-shadow: 2px 2px 5px 0px #656565;
+	background-color: #1693A5 ;
+}
+
+
+#nav ul{						/*Liste du nav */
+	list-style: none;					/*On cache les déco des éléments */
+	background-color: #4D4A4A;
+	padding: 0;
+	margin: 0;
+	font-family: 'geo';
+	box-shadow: 2px 2px 5px 0px #656565;
+}
+
+#nav ul li{						/* Eléments de la liste */
+	font-size: 1.5em;
+	padding: 7px;
+	text-align: center;
+	border : 1px solid grey;	
+}
+
+#nav ul li:hover, li:active{				/* Eléments au passage de la souris */	
+	background-color: orange;
+}	
+#nav ul li a{						/* Liens dans l'élément */
+	text-decoration: none;
+	color: #E9E9E9 ;
+}
+
+#nav ul li:hover a{					/* Liens au passage de la souris sur l'élément */
+	color: white;
+	text-decoration: none;
+}
+
+#focusLI{						/* Elément de la page active */
+	background-color: #24888F;
+}
+
+#focusLI a{						/* Lien de la page active */
+	color: white;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------BARRE DE NAV PC-----------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width: 992px) {				/* Version PC */
+
+	#nav{
+		background-color: #E9E9E9;
+
+	}
+
+	#nav ul{
+	list-style: none;
+	background-color: #24888F;
+	padding: 12px;
+	margin: 0;
+	font-family: 'geo';
+	box-shadow: 2px 2px 5px 0px #656565;
+	}
+
+	#nav ul li{
+		font-size: 1.5em;
+		padding: 13px;
+		text-align: center;
+		border : none;
+		display: inline;				/* Nav en ligne */
+	}
+
+	#nav ul li:hover, li:active{
+		background-color: #1693A5;
+	}
+	#nav ul li a{
+		text-decoration: none;
+		color: #E9E9E9 ;
+		font-weight: bolder;
+	}
+
+	#nav ul li:hover a{
+		color: white;
+		text-decoration: none;
+	}
+	
+	#logo2{
+		box-shadow: none;
+		width: 13%;
+	}
+
+	.hidden2{			/* On fait apparaître un logo et disparaître l'autre */
+		display: block;
+	}
+
+	.clear2{
+		display: none;
+	}
+
+
+	.col-xs-12{
+		padding: 0;
+	}
+
+	.col-md-7{
+		padding: 0;
+		padding-top: 30px;
+		padding-left: 30px;
+		margin: 0;
+	}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------CONTENU-------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+#space{
+	height: 25px;
+}
+#space3{
+	height: 25px;
+	background-color: white;
+}
+#titrepage{
+	height: 100px;
+	background-color: white;
+	text-align: left;
+	
+}
+.letterpress{
+	font-size: 70px;         /* taille de la police */
+   color: white;          /* Couleur de la police */
+   text-decoration: none;       /* Enlèvement du soulignement sur les liens */
+   text-shadow: 0 -2px 0 #222222;
+   text-align: center;
+   font-family: 'Pacifico', cursive;
+}
+#presentation{
+	background-color: #1693A5;
+	padding: 30px;
+}
+article{
+	background-color: #FBFBFB ;
+	color: black;
+	width: 1000px;
+   height: 200px;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   padding: 10px;
+   -webkit-box-shadow: -1px -1px 25px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: -1px -1px 25px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px -1px 25px 0px rgba(0,0,0,0.75);
+	margin: 10px;
+}
+article:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #FBFBFB;
+   border-bottom: 13px solid transparent;
+}
+#space2{
+	height: 40px;
+}
+.col-xs-5{
+	padding: 0;
+	margin: 0;
+}
+#photofab img {
+	width: 350px;
+	height: 350px;
+}
+
+.btn-facebook {
+	  background: #3B5998;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #263961; 
+	  font-family: 'Pacifico', cursive;
+	}
+	.btn-facebook:link, .btn-facebook:visited {
+	  color: #fff;
+	}
+	.btn-facebook:active, .btn-facebook:hover {
+	  background: #263961;
+	  color: #fff;
+	}
+	#facebook{
+		background-color: #263961;
+		height: 551px;
+		text-align: center;
+		margin: 40px auto;
+	}
+	#fb{
+		height: 470px;
+	}
+	#plan{
+		padding: 43px;
+	}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------FOOTER--------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ul li{ 
+  list-style-type: none;
+  padding: 0; 
+}
+h2{
+	background-color: #1693A5;
+  	text-align: center;
+  	margin-bottom: 10px;
+  	color:white;
+  	font-size: 23px;
+  	font-family: 'Pacifico', cursive;  
+  	box-shadow: 2px 2px 5px 0px #656565;
+}
+footer{
+color: white;
+width: auto;
+height: 30px;
+line-height: 20px;
+text-align: left;
+}
+
+/*gros bordel*/
+
+#ag2r{
+  padding-left: 90px;
+}
+
+#admical{
+	padding-left: 90px;
+}
+
+#afmd{
+  padding-left: 90px;
+}
+#acse{
+  padding-left: 90px;
+}
+#anru{
+  padding-left: 40px;
+}
+#cuisines{
+  padding-left: 40px;
+}
+#laposte{
+  padding-left: 90px;
+}
+#apf{
+  padding-left: 90px;
+}
+#cuisines{
+  padding-left: 90px;
+}
+#cnam{
+  padding-left: 90px;
+}
+#ratp{
+  padding-left: 90px;
+}
+#ministere{
+  padding-left: 90px;
+}
+.caroussel {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.carousel { 
+ 	margin: 0 -100px;  
+  	width: calc(100% - ($button-spacing * 2));
+}
+
+/* fin du gros bordel */
+
+/* Alors tout ça, faut pas chercher à comprendre c'est justes les fleches pour le caroussel */
+
+.carousel[data-shift="1"] .carousel-inner > .item {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.carousel .carousel-inner > .item.row { margin: 0; }
+
+.carousel .carousel-control {
+  background: none;
+  color: transparent;
+  overflow: hidden;
+  text-shadow: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 30px;
+}
+
+.carousel .carousel-control:before {
+  color: #444;
+  font-family: 'Glyphicons Halflings';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.carousel .carousel-control:after {
+  content: '';
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+.carousel .carousel-control.left{ 
+	left: -20px; top: 30px; 
+}
+
+.carousel .carousel-control.left:before{ 
+	content: '\e079'; 
+}
+
+.carousel .carousel-control.left:after{ 
+	right: -100%; 
+}
+
+.carousel .carousel-control.right{ 
+	top: 30px; 
+}
+
+.carousel .carousel-control.right:before{ 
+	content: '\e080'; 
+}
+
+.carousel .carousel-control.right:after{ 
+	left: -100%; 
+}
+
+/*CSS Présentation*/
+blockquote{
+	border-color: #EC9566;
+	min-height: 40px;
+    margin-bottom: 5px;
+    padding: 5px 13px;
+    border-radius: 8px;
+    background-color: white;
+    font-style: italic;
+    text-shadow: 0 1px 0 #ffffde;
+	color: #8e7c70;
+	
+}

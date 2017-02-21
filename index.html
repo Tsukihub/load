@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <!-- Meta pour la responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Link du CSS de Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!-- Link du JS JQuery -->
+		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+		<!-- Link du JS de Bootstrap -->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<!-- Link de notre CSS  -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Site Face</title>
+		<!-- Coloration de Safari sur mobile -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#24888F">
+		<!-- Coloration de Google Chrome sur mobile -->
+		<meta name="theme-color" content="#24888F">
+	</head>
+
+	<body>
+
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- ///////////////////////////////////////////////////////////HEADER///////////////////////////////////////////////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="nav" class="row">
+
+		<nav>
+
+			<!-- Div du Logo Face Bourbonnais -->
+		 	<div class="col-xs-4 col-md-12">
+
+				 <img id="logo" src="img/logo.jpg" alt="Logo Face Territoire bourbonnais" class="clear2">
+				<img id="logo2" src="img/logo2.png" alt="" class="hidden2">
+				        
+			 </div>
+
+			<!-- Barre de naviguation -->
+			 <div class="col-xs-8 col-md-12">
+			
+
+				 <ul>
+				 	<!-- Lien de la page active -->
+				 	<li id="focusLI"><a href="#" onclick="loadArticle('accueil.html', 'corpsDeLaPage')">Accueil</a></li>
+				 	<li><a href="#" onclick="loadArticle('presentation.html', 'corpsDeLaPage')">Présentation</a></li>
+				 	<li><a href="#"onclick="loadArticle('galerie.html', 'corpsDeLaPage')">Galerie</a></li>
+				 	<li><a href="#"onclick="loadArticle('partenaires.html', 'corpsDeLaPage')">Partenaires</a></li>
+				 	<li><a href="#"onclick="loadArticle('lafabrique.html', 'corpsDeLaPage')">La Fabrik</a></li>
+				 	<li><a href="#" onclick= "loadArticle('contact.html', 'corpsDeLaPage')">Contact</a></li>
+				 </ul>
+
+			 </div>
+
+		</nav>
+
+	</div>
+
+
+<!-- 	<button onclick="javascript:loadPage('accueil.html');">Cliquer pour charger la Div ci-dessous fr</button>  -->
+
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- ///////////////////////////////////////////////////////////CONTENU/////////////////////////////////////////////////////////////// -->
+	<div id="page1">	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="corpsDeLaPage">
+	 <noscript class="alert alert-danger text-center center-block">
+			Javascript est nécessaire au bon fonctionnement de ce site, pour continuer à naviguer merci de le réactiver.
+		     </noscript>
+	</div>
+	
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- ///////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div class="row">
+		
+		<div id="footer">
+
+			<!-- Div des mentions légales -->
+			<div class="col-xs-12 col-xs-offset-3 col-md-offset-3">
+
+				<ul>Mentions légales
+					<li>Copyrigth</li>
+					<li>Exemples</li>
+				</ul>
+
+			</div>
+
+			<!-- Div du caroussel des partenaires -->
+			<div class="col-xs-6 col-xs-offset-3 col-md-offset-3">
+
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+					  <!-- Indicateur de page -->
+					  <ol class="carousel-indicators">
+						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+					  </ol>
+
+					  <!-- Le slider -->
+					  <div class="carousel-inner" role="listbox">
+
+						    <div class="item active">
+						     	<img  id="imgCarousel" src="img/logo.jpg" alt="" >
+						    </div>
+
+						    <div class="item">
+						      	<img id="imgCarousel" src="img/une1.png" alt="">
+						    </div>
+
+						    <div class="item">
+						      	<img id="imgCarousel" src="img/une2.png" alt="">
+						    </div>
+
+						    <div class="item">
+						     	<img id="imgCarousel" src="img/une3.png" alt="">
+						    </div>
+
+					 </div>
+
+					  <!-- Flèches pour changer d'image -->
+					  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+		<!-- Link de notre script JS -->
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+
+
+
+
+	<!-- ///////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////////// -->
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<footer>
+      <div class="caroussel" style="margin-top:40px;" >
+      <div id="single" class="carousel slide" data-ride="carousel" data-shift="1">
+      <h2 >NOS PARTENAIRES</h2>
+      <div class="carousel-inner" >
+        <ul class="row item active" >
+          <li id="ag2r" class="col-xs-4 one"> <a href="http://www.ag2rlamondiale.fr/"><img src="img/ag2r.jpg"< class="img-responsive"></a> </li>
+          <li id="admical" class="col-xs-4 one"> <a href="http://www.admical.org/"> <img src="img/admical.jpg" class="img-responsive"></a> </li>
+          <li id="afmd" class="col-xs-4 one"> <a href="http://www.afmd.fr/"><img src="img/afmd.jpg" class="img-responsive"></a> </li>
+        </ul>
+        <ul class="row item">
+          <li id="acse" class="col-xs-4 one"><a href="http://www.federation-fare.fr/partenaires/acse"> <img src="img/ACSE.gif" class="img-responsive"></a></li>
+          <li id="anru" class="col-xs-4 one"><a href="http://www.anru.fr/"> <img src="img/ANRU.gif" class="img-responsive"></a> </li>
+          <li id="apf" class="col-xs-4 one"> <a href="http://www.apf.asso.fr/"><img src="img/apf.jpg" class="img-responsive"></a> </li>
+        </ul>
+        <ul class="row item">
+          <li id="civique" class="col-xs-4 one"><a href="http://www.service-civique.gouv.fr//"> <img src="img/civique.png" class="img-responsive"></a> </li>
+          <li id="cnam" class="col-xs-4 one"><a href="http://www.cnam.fr//"> <img src="img/cnam.jpg" class="img-responsive"></a> </li>
+          <li id="cuisines" class="col-xs-4 one"><a href="http://www.cuisinemodemplois.com/"> <img src="img/cuisines.gif" class="img-responsive"></a> </li>
+        </ul>
+        <ul class="row item">
+          <li id="diversite" class="col-xs-4 one"><a href="http://www.charte-diversite.com/"> <img src="img/diversite.jpg" class="img-responsive"></a> </li>
+          <li id="fei" class="col-xs-4 one"><a href="https://www.fei.org/"> <img src="img/fei.gif" class="img-responsive"></a> </li>
+          <li id="laposte" class="col-xs-4 one"><a href="http://www.laposte.fr/"> <img src="img/laposte.jpg" class="img-responsive"></a> </li>
+        </ul>
+        <ul class="row item">
+          <li id="ministere" class="col-xs-4 one"><a href="http://www.education.gouv.fr/pid7/le-ministere.html"> <img src="img/ministere.gif" class="img-responsive"></a> </li>
+          <li id="poleemploi" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/poleemploi.jpg" class="img-responsive"></a> </li>
+          <li id="ratp" class="col-xs-4 one"><a href="http://www.pole-emploi.fr/accueil/"> <img src="img/ratp.jpg" class="img-responsive"> </a></li>
+        </ul>
+        <ul class="row item">
+          <li id="total" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/total.jpg" class="img-responsive"></a> </li>
+          <li id="union" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/union.png" class="img-responsive"></a> </li>
+        </ul>
+      </div>
+      <a class="carousel-control left" href="#single" data-slide="prev"><</a> <a class="carousel-control right" href="#single" data-slide="next">></a> 
+      </div>
+      </div>
+    </footer>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Link de notre script JS -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+		<noscript class="alert alert-danger">
+			Javascript est nécessaire au bon fonctionnement de ce site, pour continuer à naviguer merci de le réactiver.
+		</noscript>
+	</body>
+</html>
+
+</html>	
+
