@@ -428,8 +428,12 @@ blockquote{
 }
 .cache{
 	display: none;
+	
 }
 
 .Afficher {
-	display: block;
+	display: inline;
+	overflow: wrap;
+	word-break: break-all;
+	
 }

@@ -34,9 +34,10 @@ $("#"+loc).load(url);
 
 function AfficherOnclick(loc){
   $( "#"+loc ).toggle(function() {
-  $('#'+loc).attr('class', 'Afficher');
+  // $('.cache').removeClass('Afficher');
+  $('#'+loc).addClass("Afficher");
 }, function() {
-  $('#'+loc).removeAttr('class', 'Afficher');
+  // $('.cache').removeClass('Afficher');
 });
 
 } 
