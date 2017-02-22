@@ -23,10 +23,6 @@
 
 ////////////affichage d'un contenu différent par page////////
 
-function loadPage(url){
-$( "#corpsDeLaPage" ).load(url);
-} 
-
 window.onload = function() {
   loadArticle('accueil.html', 'corpsDeLaPage');
 };
@@ -35,3 +31,15 @@ window.onload = function() {
 function loadArticle(url, loc){
 $("#"+loc).load(url);
 } 
+
+function AfficherOnclick(url, loc){
+	$( "#"+loc ).toggle(function() {
+  $('#'+loc).attr('class', 'Afficher');
+  $('.Afficher').css('display', 'block');
+}, function() {
+  $('#'+loc).removeAttr('class', 'Afficher');
+  $('.Afficher').css('display', 'none');;
+});
+
+} 
+
