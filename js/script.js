@@ -32,14 +32,26 @@ function loadArticle(url, loc){
 $("#"+loc).load(url);
 } 
 
-function AfficherOnclick(url, loc){
-	$( "#"+loc ).toggle(function() {
+function AfficherOnclick(loc){
+  $( "#"+loc ).toggle(function() {
   $('#'+loc).attr('class', 'Afficher');
-  $('.Afficher').css('display', 'block');
 }, function() {
   $('#'+loc).removeAttr('class', 'Afficher');
-  $('.Afficher').css('display', 'none');;
 });
 
 } 
 
+// function AfficherOnclick(url, loc){
+//   $( "#"+loc ).toggle(function() {
+//   $('#'+loc).attr('class', 'Afficher');
+// }, function() {
+//   $('#'+loc).removeAttr('class', 'Afficher');
+// });
+
+// } 
+
+///////////////////////////apparition seule//////////////////////////////////////////////
+// function AfficherOnclick(url, loc){
+// $('#'+loc).attr('class', 'Afficher');
+// $('.Afficher').css('display', 'block');
+// } 
